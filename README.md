@@ -27,9 +27,11 @@ O projeto atingiu 100% de pontuação em ferramentas de auditoria de SEO.
 
 ### 🔗 Online
 Acesse pelo GitHub Pages:  
-[https://yagoradev.github.io/tecboard/]
+https://yagoradev.github.io/tecboard/
 
 ### 💻 Localmente
 1. Clone o repositório:
 ```bash
-git clone [link-do-repositorio]
+git clone https://github.com/YagoraDev/tecboard.git
+```
+2. Abra o arquivo index.html em seu navegador
