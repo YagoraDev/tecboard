@@ -1,160 +1,158 @@
-/* Definição de fontes */
+/* DEFINICAO DE FONTES */
 @font-face {
-    font-family: "Unbounded";
-    src: url("../fonts/Unbounded-Bold.ttf")
-    format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Regular.ttf")
-    format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Reset */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo Desktop */
+/* ESTILO DESKTOP */
 body {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 body.dark {
-  background-color: #0E1014;
-  color: white; 
+  background-color: #0e1014;
+  color: white;
 }
 
 body.dark .titulo {
-    color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 header {
-    padding: 20px;
-    margin: 2% 9%;
+  padding: 20px;
+  margin: 2% 9%;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    width: 200px;
-    height: 34px;
+  width: 200px;
+  height: 34px;
 }
 
 .botaoClaridade {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-main section{
+main section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.botao {
+  font-size: 24px;
+  text-decoration: none;
+  width: 340px;
+  height: 66px;
+  border-radius: 36px;
+  background-color: #9747ff;
+  color: #f5f5f5;
+  font-family: "Poppins", "sans-serif";
+  margin: 40px auto;
+  line-height: 66px;
+}
+
+.botao:hover {
+  background-color: #8233eb;
+}
+
+.titulo {
+  font-size: 64px;
+  margin-top: 60px;
+  color: #232323;
+  text-align: center;
+  font-family: "Unbounded", "sans-serif";
+}
+
+p {
+  font-family: "Poppins", "sans-serif";
+  font-size: 24px;
+  margin: 24px auto 0;
+}
+
+.destaque {
+  color: #9747ff;
+}
+
+.produto {
+  width: 100%;
+  max-width: 792px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  p {
+    width: 90%;
+    max-width: 648px;
+  }
+}
+
+@media (max-width: 375px) {
+  main section {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding: 0 20px;
-}
+  }
 
-.botao {
-    font-size: 24px;
-    text-decoration: none;
-    width: 340px;
-    height: 66px;
-    border-radius: 36px;
-    background-color: #9747FF;
-    color: #F5F5F5;
-    font-family: "Poppins", "sans-serif";
-    margin: 40px auto;
-    line-height: 66px;
-}
-
-.botao:hover {
-    background-color: #8233EB;
-}
-
-.titulo {
-    font-size: 64px;
-    margin-top: 60px;
-    color: #232323;
-    text-align: center;
-    font-family: "Unbounded", "sans-serif";
-}
-
-p {
-    font-family: "Poppins", "sans-serif";
-    font-size: 24px;
-    margin: 24px auto 0;
-}
-
-.destaque {
-    color: #9747FF;
-}
-
-.produto {
-    width: 100%;
-    max-width: 792px; 
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-@media(max-width: 768px){
-    p {
-        width: 90%;
-        max-width: 648px;
-    }
-}
-
-@media(max-width: 375px) {
-
-   main section{
-    display:  flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+  .titulo {
+    font-size: 40px;
     padding: 0 20px;
-}
+  }
 
-    .titulo {
-        font-size: 40px;
-        padding: 0 20px;
-    }
+  p {
+    max-width: 341px;
+  }
 
-    p {
-        max-width: 341px;
-    }
-
-    header {
+  header {
     padding: 20px;
     margin: 2% 2%;
-    }
+  }
 
-    .produto {
-            width: 100%;
-    max-width: 792px; 
+  .produto {
+    width: 90%;
+    max-width: 341px;
     height: auto;
     margin: 0 auto;
     display: block;
-    }
+  }
 
-        .botao {
-        width: 90%; 
-        max-width: 251px; 
-        height: 66px;
-        font-size: 20px;
-        margin: 40px auto; 
-        display: block; 
-        text-align: center; 
-    }
+  .botao {
+    width: 90%;
+    max-width: 251px;
+    height: 66px;
+    font-size: 20px;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+  }
 }
