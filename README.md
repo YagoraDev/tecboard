@@ -26,7 +26,7 @@ O projeto atingiu 100% de pontuação em ferramentas de auditoria de SEO.
 ## Como acessar
 
 ### 🔗 Online
-Acesse pelo GitHub Pages:  
+Acessar website:  
 https://yagoradev.github.io/tecboard/
 
 ### 💻 Localmente
